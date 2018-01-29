@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Cameracontroller.cs" />
+    <Compile Include="Assets\Scripts\GuardControlelr.cs" />
     <Compile Include="Assets\Scripts\Legcontrol.cs" />
     <Compile Include="Assets\Scripts\Pisscontroller.cs" />
     <Compile Include="Assets\Scripts\Playercontroller.cs" />

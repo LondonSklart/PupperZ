@@ -8,9 +8,11 @@ public class Playercontroller : MonoBehaviour {
     public float pissForce = 100;
     public GameObject piss;
     Animator[] animators;
+    Rigidbody body;
 
     private void Start()
     {
+       body = gameObject.GetComponent<Rigidbody>();
         animators = FindObjectsOfType<Animator>();
         foreach (Animator a in animators)
         {
@@ -29,9 +31,15 @@ public class Playercontroller : MonoBehaviour {
             {
                 a.enabled = true;
             }
+
+
             Vector3 movement = new Vector3(moveHorizontal, 0.0001f, moveVertical);
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
+        }
+        if (Input.GetKeyDown(KeyCode.J) && Physics.Raycast(gameObject.transform.position,Vector3.down,2.5f))
+        {
+            body.AddForce(0, 10, 0,ForceMode.Impulse);
         }
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
         {
