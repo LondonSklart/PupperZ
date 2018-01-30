@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 084e2fd3da772ce4ba8c0aef5bebc886
+timeCreated: 1517317237
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: head
+    100004: ikHandle1
+    100006: ikHandle2
+    100008: ikHandle3
+    100010: ikHandle4
+    100012: joint11
+    100014: joint12
+    100016: joint14
+    100018: joint15
+    100020: joint16
+    100022: joint17
+    100024: joint18
+    100026: joint19
+    100028: joint2
+    100030: joint20
+    100032: joint5
+    100034: L_back_ankle
+    100036: L_back_knee
+    100038: L_back_leg
+    100040: L_back_paw
+    100042: L_front_ankle
+    100044: L_front_knee
+    100046: L_front_leg
+    100048: L_front_paw
+    100050: L_frontleg
+    100052: L_hindleg
+    100054: neck
+    100056: pCube4
+    100058: R_back_ankle
+    100060: R_back_knee
+    100062: R_back_leg
+    100064: R_back_paw
+    100066: R_front_ankle
+    100068: R_front_knee
+    100070: R_front_leg
+    100072: R_front_paw
+    100074: R_frontleg
+    100076: R_hindleg
+    100078: Root
+    100080: tail_base
+    400000: //RootNode
+    400002: head
+    400004: ikHandle1
+    400006: ikHandle2
+    400008: ikHandle3
+    400010: ikHandle4
+    400012: joint11
+    400014: joint12
+    400016: joint14
+    400018: joint15
+    400020: joint16
+    400022: joint17
+    400024: joint18
+    400026: joint19
+    400028: joint2
+    400030: joint20
+    400032: joint5
+    400034: L_back_ankle
+    400036: L_back_knee
+    400038: L_back_leg
+    400040: L_back_paw
+    400042: L_front_ankle
+    400044: L_front_knee
+    400046: L_front_leg
+    400048: L_front_paw
+    400050: L_frontleg
+    400052: L_hindleg
+    400054: neck
+    400056: pCube4
+    400058: R_back_ankle
+    400060: R_back_knee
+    400062: R_back_leg
+    400064: R_back_paw
+    400066: R_front_ankle
+    400068: R_front_knee
+    400070: R_front_leg
+    400072: R_front_paw
+    400074: R_frontleg
+    400076: R_hindleg
+    400078: Root
+    400080: tail_base
+    4300000: pCube4
+    9500000: //RootNode
+    13700000: pCube4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
