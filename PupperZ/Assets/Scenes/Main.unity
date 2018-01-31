@@ -3180,12 +3180,12 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420775939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 415, y: 133.5, z: 0}
+  m_LocalPosition: {x: 380.5, y: 208, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1141690460}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3197,6 +3197,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4824907900846348, guid: 1034241dd226f2b40805ff6731645944,
     type: 2}
   m_PrefabInternal: {fileID: 842001611}
+--- !u!1 &433625744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 433625746}
+  - component: {fileID: 433625745}
+  m_Layer: 0
+  m_Name: Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &433625745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433625744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eca7df9e639c224f8715efa45385ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillAmount: 0
+  content: {fileID: 1399216195}
+--- !u!4 &433625746
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433625744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 195.39, y: 2.1319623, z: 298.91}
+  m_LocalScale: {x: 1, y: 3.5639222, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &443879211
 Prefab:
   m_ObjectHideFlags: 0
@@ -3869,7 +3911,18 @@ Prefab:
       propertyPath: m_TagString
       value: PupperZ
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 95923917645442270, guid: 2afb926c0e311264ba33bde77a1a3e24,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5d13e8736591b17478c385df5b6e05ce, type: 2}
+    - target: {fileID: 114237620705895872, guid: 2afb926c0e311264ba33bde77a1a3e24,
+        type: 2}
+      propertyPath: pissOMeter.bar
+      value: 
+      objectReference: {fileID: 433625745}
+    m_RemovedComponents:
+    - {fileID: 95923917645442270, guid: 2afb926c0e311264ba33bde77a1a3e24, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2afb926c0e311264ba33bde77a1a3e24, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &509058889
@@ -7090,7 +7143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &771888679
 Prefab:
@@ -10229,7 +10282,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1141690459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -367.3, y: -80.850006, z: 0}
+  m_LocalPosition: {x: -332.8, y: -155.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1301121211}
@@ -16332,7 +16385,7 @@ Transform:
   - {fileID: 1168560622}
   - {fileID: 1715963934}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994835784
 GameObject:
