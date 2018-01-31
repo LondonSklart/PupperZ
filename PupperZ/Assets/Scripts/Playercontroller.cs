@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Playercontroller : MonoBehaviour {
 
+	[SerializeField]
+	private Stat pissOMeter; 
+
     public float speed = 10;
     public float pissForce = 100;
-    public GameObject piss;
+	public GameObject piss;
     Animator[] animators;
     Rigidbody body;
 
@@ -64,7 +67,7 @@ public class Playercontroller : MonoBehaviour {
 
 
 
-    private void FirePiss()
+    void FirePiss()
     {
         GameObject clone;
        clone = Instantiate(piss,gameObject.transform.position,transform.rotation);
