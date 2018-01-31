@@ -42,7 +42,11 @@ public class Stat
 		}
 	}
 
-
+	public void Initialize()
+	{
+		this.MaxVal = maxVal;
+		this.CurrentVal = currentVal; 
+	}
 
 
 }

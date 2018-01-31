@@ -5,7 +5,12 @@ using UnityEngine;
 public class Playercontroller : MonoBehaviour {
 
 	[SerializeField]
-	private Stat pissOMeter; 
+	private Stat pissOMeter;
+
+	private void Awake()
+	{
+		pissOMeter.Initialize ();
+	}
 
     public float speed = 10;
     public float pissForce = 100;
