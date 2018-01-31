@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 65163302738054556}
   m_Layer: 0
   m_Name: Dogger
-  m_TagString: Untagged
+  m_TagString: PupperZ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -844,7 +844,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1230538521902492}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 79.91, y: 0.01, z: 26.57}
+  m_LocalPosition: {x: 81.96, y: 0.52, z: 19.39}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4044533069708194}
@@ -1217,7 +1217,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65163302738054556
 BoxCollider:
@@ -1229,7 +1229,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.2, z: 0.3}
+  m_Size: {x: 0.3, y: 0.1, z: 0.3}
   m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!95 &95923917645442270
 Animator:
@@ -1259,6 +1259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fda2252ff2cee04db9c0bd732e31942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pissOMeter:
+    bar: {fileID: 0}
+    maxVal: 0
+    currentVal: 0
   speed: 10
   pissForce: 300
   piss: {fileID: 1387897017393004, guid: 8cc8737aecad04e40bee445c087ddc88, type: 2}
