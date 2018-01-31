@@ -3185,7 +3185,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420775939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 380.5, y: 208, z: 0}
+  m_LocalPosition: {x: 415, y: 133.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1141690460}
@@ -3229,7 +3229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eca7df9e639c224f8715efa45385ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillAmount: 0
+  lerpSpeed: 2
   content: {fileID: 1399216195}
 --- !u!4 &433625746
 Transform:
@@ -3926,6 +3926,7 @@ Prefab:
       propertyPath: pissOMeter.bar
       value: 
       objectReference: {fileID: 433625745}
+<<<<<<< HEAD
     - target: {fileID: 65163302738054556, guid: 2afb926c0e311264ba33bde77a1a3e24,
         type: 2}
       propertyPath: m_Size.x
@@ -3942,6 +3943,17 @@ Prefab:
     - target: {fileID: 4253770577096532, guid: 2afb926c0e311264ba33bde77a1a3e24, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+=======
+    - target: {fileID: 114237620705895872, guid: 2afb926c0e311264ba33bde77a1a3e24,
+        type: 2}
+      propertyPath: pissOMeter.maxVal
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114237620705895872, guid: 2afb926c0e311264ba33bde77a1a3e24,
+        type: 2}
+      propertyPath: pissOMeter.currentVal
+      value: 100
+>>>>>>> faefacc62b8ffe2831c6c69e3f449e0db8aefded
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95923917645442270, guid: 2afb926c0e311264ba33bde77a1a3e24, type: 2}
@@ -10370,7 +10382,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1141690459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -332.8, y: -155.35, z: 0}
+  m_LocalPosition: {x: -367.3, y: -80.850006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1301121211}
