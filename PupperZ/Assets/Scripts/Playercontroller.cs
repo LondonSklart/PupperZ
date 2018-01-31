@@ -15,17 +15,15 @@ public class Playercontroller : MonoBehaviour {
     public float speed = 10;
     public float pissForce = 100;
 	public GameObject piss;
-    Animator[] animators;
     Rigidbody body;
 
     private void Start()
     {
        body = gameObject.GetComponent<Rigidbody>();
-        animators = FindObjectsOfType<Animator>();
-        foreach (Animator a in animators)
-        {
-            a.enabled = false;
-        }
+        Animator animation = GetComponentInChildren<Animator>();
+        animation.speed = 6;
+       // animators = FindObjectsOfType<Animator>();
+
     }
 
     // Update is called once per frame
@@ -35,11 +33,6 @@ public class Playercontroller : MonoBehaviour {
         float moveVertical = Input.GetAxisRaw("Vertical");
         if (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
-            foreach (Animator a in animators)
-            {
-                a.enabled = true;
-            }
-
 
             Vector3 movement = new Vector3(moveHorizontal, 0.0001f, moveVertical);
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
@@ -53,10 +46,7 @@ public class Playercontroller : MonoBehaviour {
         {
 
 
-            foreach (Animator a in animators)
-            {
-                a.enabled = false;
-            }
+ 
 
         }
         if (Input.GetKey(KeyCode.Space))

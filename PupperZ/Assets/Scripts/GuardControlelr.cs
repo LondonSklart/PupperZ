@@ -77,7 +77,7 @@ public class GuardControlelr : MonoBehaviour {
         {
          checkPointIndex++;
         }
-       
+        Debug.Log(checkPointIndex);
         currentCheckPoint = checkpoints[checkPointIndex].transform.position;
         agent.SetDestination(currentCheckPoint);
 
