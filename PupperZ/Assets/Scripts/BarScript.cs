@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class BarScript : MonoBehaviour {
 
-	private float fillAmount;
-
 	[SerializeField]
-	private float lerpSpeed;
+	private float fillAmount;
 
 	[SerializeField]
 	private Image content;
@@ -39,7 +37,7 @@ public class BarScript : MonoBehaviour {
 	{
 		if (fillAmount != content.fillAmount) 
 		{
-			content.fillAmount = Mathf.Lerp(content.fillAmount,fillAmount,Time.deltaTime * lerpSpeed);
+			content.fillAmount = fillAmount;
 		}
 
 	}

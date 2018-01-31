@@ -54,10 +54,6 @@ public class Playercontroller : MonoBehaviour {
             FirePiss();
         }
 
-		if (Input.GetKey(KeyCode.Space))
-		{
-			pissOMeter.CurrentVal -= 1;
-		}
 
 
     }
