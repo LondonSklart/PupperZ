@@ -9,6 +9,8 @@ public class GuardControlelr : MonoBehaviour {
     private int checkPointIndex = 0;
     private bool trackingPupperZ = false;
 
+    private float bufferTime = 1;
+
     public GameObject[] checkpoints;
 
     Vector3 currentCheckPoint;
@@ -33,9 +35,12 @@ public class GuardControlelr : MonoBehaviour {
         if (trackingPupperZ == true)
         {
             agent.SetDestination(pupperZ.transform.position);
-            if (agent.remainingDistance > 10)
+            bufferTime -= Time.deltaTime;
+            if (agent.remainingDistance > 10 && bufferTime < 0)
             {
+                Debug.Log("Boom");
                 trackingPupperZ = false;
+                bufferTime = 1;
                 NextCheckPoint();
             }
             if (agent.remainingDistance <= 1)
@@ -69,7 +74,7 @@ public class GuardControlelr : MonoBehaviour {
     }
     public void NextCheckPoint()
     {
-        if (checkPointIndex-1 == checkpoints.Length)
+        if (checkPointIndex+1 == checkpoints.Length)
         {
             checkPointIndex = 0;
         }
