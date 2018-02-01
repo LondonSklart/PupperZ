@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33044410989513068}
   - component: {fileID: 23612756890074958}
   - component: {fileID: 95607391455585630}
+  - component: {fileID: 65229964695671316}
   m_Layer: 0
   m_Name: fence prefab 1
   m_TagString: Untagged
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509716586288896}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 209.16187, y: 0.447, z: 261.09555}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 88.43, y: 1.28, z: 12.528351}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,6 +52,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -66,6 +68,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -81,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509716586288896}
   m_Mesh: {fileID: 4300000, guid: 48453f06c589a3d46bd20daa0336a886, type: 3}
+--- !u!65 &65229964695671316
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509716586288896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08358428, y: 0.9084243, z: 5.0207744}
+  m_Center: {x: 0, y: -0.000000029802322, z: 0}
 --- !u!95 &95607391455585630
 Animator:
   serializedVersion: 3

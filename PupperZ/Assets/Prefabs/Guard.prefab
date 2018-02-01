@@ -111,6 +111,9 @@ MonoBehaviour:
   speed: 10
   checkpoints:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   pupperZ: {fileID: 0}
 --- !u!195 &195694277230563414
 NavMeshAgent:

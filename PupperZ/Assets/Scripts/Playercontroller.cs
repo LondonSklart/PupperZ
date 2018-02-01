@@ -69,10 +69,10 @@ public class Playercontroller : MonoBehaviour {
 			pissOMeter.CurrentVal -= 1;
 		}
 
-		if (pissOMeter.CurrentVal < 0)
+		/*if (pissOMeter.CurrentVal < 0)
 		{
 			!FirePiss ();
-		}
+		}*/
 
     }
 
