@@ -9,7 +9,7 @@ public class Pisscontroller : MonoBehaviour
 
     private void Update()
     {
-        pissDuration -= Time.deltaTime;
+		pissDuration -= Time.deltaTime;
         if (pissDuration < 0)
         {
             Destroy(gameObject);
