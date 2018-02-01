@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23612756890074958}
   - component: {fileID: 95607391455585630}
   - component: {fileID: 65229964695671316}
+  - component: {fileID: 208100819992151180}
   m_Layer: 0
   m_Name: fence prefab 1
   m_TagString: Untagged
@@ -94,7 +95,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08358428, y: 0.9084243, z: 5.0207744}
+  m_Size: {x: 0.8358428, y: 2, z: 5.2774}
   m_Center: {x: 0, y: -0.000000029802322, z: 0}
 --- !u!95 &95607391455585630
 Animator:
@@ -113,3 +114,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!208 &208100819992151180
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509716586288896}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.042000003, y: 0.45400003, z: 2.5100002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23205104364030730}
   - component: {fileID: 95012902535222036}
   - component: {fileID: 65581439059388814}
+  - component: {fileID: 208135027755277162}
   m_Layer: 0
   m_Name: Hydrant
   m_TagString: Untagged
@@ -113,3 +114,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!208 &208135027755277162
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1254363926952004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.90700006, y: 1.228, z: 0.77900004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
