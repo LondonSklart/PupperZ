@@ -18,7 +18,6 @@ public class Playercontroller : MonoBehaviour {
     Animator[] animators;
     Rigidbody body;
 
-
     private void Start()
     {
        body = gameObject.GetComponent<Rigidbody>();
@@ -27,10 +26,35 @@ public class Playercontroller : MonoBehaviour {
         {
             a.enabled = false;
         }
+
     }
     // Update is called once per frame
     void Update ()
     {
+		if (canPiss == true)
+		{
+			FirePiss ();
+		}
+		canPiss = false;	
+
+		if (Input.GetKey(KeyCode.Space))
+		{
+			canPiss = true;
+		}
+		if (Input.GetKey(KeyCode.Space))
+		{
+			pissOMeter.CurrentVal -= 1;
+		}
+
+		if (pissOMeter.CurrentVal < 0 ) 
+		{
+			canPiss = false;
+		} 
+		else if (pissOMeter.CurrentVal > 100) 
+		{
+			pissOMeter.CurrentVal = 100; 
+		}
+
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
         if (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
@@ -57,38 +81,8 @@ public class Playercontroller : MonoBehaviour {
             {
                 a.enabled = false;
             }
-
-			canPiss = false;	
-
-		if (Input.GetKey(KeyCode.Space))
-		{
-			canPiss = true;
-		}
-
-		if (canPiss == true)
-		{
-			FirePiss ();
-		}
-
-        }
-        
-		if (Input.GetKey(KeyCode.Space))
-		{
-			pissOMeter.CurrentVal -= 1;
-		}
-			
-		if (pissOMeter.CurrentVal < 0 ) 
-		{
-			canPiss = false;
-		} 
-		else if (pissOMeter.CurrentVal > 100) 
-		{
-			pissOMeter.CurrentVal = 100; 
-		}
-			
-
     }
-
+	}
 
 	public void FirePiss ()
 	{
