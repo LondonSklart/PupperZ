@@ -34,18 +34,21 @@ public class GuardControlelr : MonoBehaviour {
         }
         if (trackingPupperZ == true)
         {
-            agent.SetDestination(pupperZ.transform.position);
-            bufferTime -= Time.deltaTime;
-            if (agent.remainingDistance > 10 && bufferTime < 0)
+            if (pupperZ != null)
             {
-                Debug.Log("Boom");
-                trackingPupperZ = false;
-                bufferTime = 1;
-                NextCheckPoint();
-            }
-            if (agent.remainingDistance <= 1)
-            {
-                Destroy(pupperZ);
+
+
+                agent.SetDestination(pupperZ.transform.position);
+                agent.speed = 12;
+                bufferTime -= Time.deltaTime;
+                if (agent.remainingDistance > 20 && bufferTime < 0)
+                {
+                    Debug.Log("Boom");
+                    trackingPupperZ = false;
+                    bufferTime = 1;
+                    agent.speed = 3.5f;
+                    NextCheckPoint();
+                }
             }
         }
         if (agent.remainingDistance <= 1)
@@ -60,6 +63,14 @@ public class GuardControlelr : MonoBehaviour {
         Debug.DrawRay(gameObject.transform.position, new Vector3(0,0,5), Color.red);
 		
 	}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "PupperZ")
+        {
+            Destroy(collision.gameObject);
+            agent.speed = 3.5f;
+        }
+    }
 
     public void WalkForward()
     {
@@ -89,7 +100,7 @@ public class GuardControlelr : MonoBehaviour {
     }
     public void ScanForPupperZ()
     {
-        Collider[] collider = Physics.OverlapSphere(gameObject.transform.position, 5);
+        Collider[] collider = Physics.OverlapSphere(gameObject.transform.position, 10);
         if (collider.Length > 0)
         {
             foreach (Collider col in collider)
