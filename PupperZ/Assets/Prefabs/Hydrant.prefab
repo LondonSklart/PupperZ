@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 208135027755277162}
   m_Layer: 0
   m_Name: Hydrant
-  m_TagString: Untagged
+  m_TagString: Hydrant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
