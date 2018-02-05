@@ -26,11 +26,22 @@ public class Pisscontroller : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        collision.gameObject.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
         if (collision.transform.tag == "Hydrant")
         {
+            game.PissAmount();
+            if (game.GetPissAmount() > 10)
+            {
+            collision.gameObject.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
+
             game.Score();
-            if (game.GetScore() == 1)
+            collision.transform.tag = "Done";
+                game.ResetPiss();
+            }
+            
+
+            
+
+            if (game.GetScore() == 10)
             {
                 game.Victory();
             }

@@ -68,7 +68,7 @@ public class GuardControlelr : MonoBehaviour {
         if (collision.transform.tag == "PupperZ")
         {
             Destroy(collision.gameObject);
-            agent.speed = 3.5f;
+            agent.speed = 5;
         }
     }
 
@@ -100,7 +100,7 @@ public class GuardControlelr : MonoBehaviour {
     }
     public void ScanForPupperZ()
     {
-        Collider[] collider = Physics.OverlapSphere(gameObject.transform.position, 10);
+        Collider[] collider = Physics.OverlapSphere(gameObject.transform.position, 20);
         if (collider.Length > 0)
         {
             foreach (Collider col in collider)
