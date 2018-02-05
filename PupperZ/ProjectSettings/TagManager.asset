@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PupperZ
   - Hydrant
+  - Hat
+  - Hatlocation
+  - Done
   layers:
   - Default
   - TransparentFX
