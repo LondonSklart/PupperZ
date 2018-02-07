@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\HatManager.cs" />
     <Compile Include="Assets\Scripts\JumpBoost.cs" />
     <Compile Include="Assets\Scripts\Legcontrol.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\Pisscontroller.cs" />
     <Compile Include="Assets\Scripts\PissFerno.cs" />
