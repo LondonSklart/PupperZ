@@ -9,9 +9,26 @@ public class GameManager1 : MonoBehaviour
     int pissAmount;
 
     public GameObject[] hydrants;
+    public GameObject cam1, cam2;
+
     private void Start()
     {
-         hydrants = GameObject.FindGameObjectsWithTag("Hydrant");
+        cam1.SetActive(true);
+        cam2.SetActive(false);
+
+        hydrants = GameObject.FindGameObjectsWithTag("Hydrant");
+    }
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            NeckCamera();
+        }
+        if (Input.GetKey(KeyCode.X))
+        {
+            OverHeadCamera();
+        }
     }
 
     public void Victory()
@@ -37,5 +54,17 @@ public class GameManager1 : MonoBehaviour
     public void ResetPiss()
     {
         pissAmount = 0;
+    }
+
+    public void NeckCamera()
+    {
+        cam2.SetActive(true);
+        cam1.SetActive(false);
+        
+    }
+    public void OverHeadCamera()
+    {
+        cam1.SetActive(true);
+        cam2.SetActive(false);
     }
 }

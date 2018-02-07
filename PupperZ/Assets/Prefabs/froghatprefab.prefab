@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4848001306310400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4868163952158728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4208405330433034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4065588029986696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4889900088700050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4318561544797278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,9 +110,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4623371072990226}
   - component: {fileID: 95941380341585210}
-  m_Layer: 0
+  - component: {fileID: 114973776750767964}
+  m_Layer: 8
   m_Name: froghatprefab
-  m_TagString: Untagged
+  m_TagString: Hat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +128,7 @@ GameObject:
   - component: {fileID: 4907286870647294}
   - component: {fileID: 33381923974132032}
   - component: {fileID: 23323043544082052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +143,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4339955651664632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +158,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4816121500336580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 1434092961232038}
   m_LocalRotation: {x: -0.09724996, y: 0.99441767, z: -0.00053368876, w: -0.040934872}
   m_LocalPosition: {x: 2.693, y: 0.131, z: -3.883}
-  m_LocalScale: {x: 1.350362, y: 1.350362, z: 1.350362}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4339955651664632}
   - {fileID: 4907286870647294}
@@ -362,3 +363,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114973776750767964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434092961232038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0411f6dd262d0c147a60d9472bd61bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

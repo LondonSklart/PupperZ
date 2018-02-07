@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33320606413329748}
   - component: {fileID: 23304151947539278}
   - component: {fileID: 95771483851722016}
-  m_Layer: 0
+  - component: {fileID: 114991498178626720}
+  m_Layer: 8
   m_Name: tophat
-  m_TagString: Untagged
+  m_TagString: Hat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1146010949213744}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.718, y: 0.208, z: -3.893}
-  m_LocalScale: {x: 6.0531, y: 6.053098, z: 6.053098}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,3 +101,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114991498178626720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1146010949213744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0411f6dd262d0c147a60d9472bd61bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
