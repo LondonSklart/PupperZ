@@ -54,11 +54,17 @@
      <Compile Include="Assets\Scripts\BarScript.cs" />
      <Compile Include="Assets\Scripts\Cameracontroller.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager1.cs" />
      <Compile Include="Assets\Scripts\GuardControlelr.cs" />
+     <Compile Include="Assets\Scripts\HatManager.cs" />
+     <Compile Include="Assets\Scripts\JumpBoost.cs" />
      <Compile Include="Assets\Scripts\Legcontrol.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\Pisscontroller.cs" />
+     <Compile Include="Assets\Scripts\PissFerno.cs" />
      <Compile Include="Assets\Scripts\Playercontroller.cs" />
+     <Compile Include="Assets\Scripts\SpeedBoost.cs" />
      <Compile Include="Assets\Scripts\Stat.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
