@@ -268,7 +268,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375057926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 511.5, y: 133.5, z: 0}
+  m_LocalPosition: {x: 478, y: 133.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 397296201}
@@ -746,7 +746,7 @@ MonoBehaviour:
     must discharge bladder liquid to claim important territory in New Bork.\n\nSECOND:
     Agent Pupper shall receive Doggo Coins as payment if he completes his mission.\n\nTHIRD:
     If taken by the Dog Catcher, The Rich Doggos can, for payment, bribe you out.
-    If Agent Pupper has an inadequate amount of Doggo Coins for tthis service, the
+    If Agent Pupper has an inadequate amount of Doggo Coins for this service, the
     mission will be seen as failed.\n\n                    CONTROLS\n\n                 W
     A S D to move\n                 SPACE to pee\n                 J to jump (you
     can only\n                 jump after acquiring a \n                 powerup)"
