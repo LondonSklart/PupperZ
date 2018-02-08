@@ -14,10 +14,13 @@ public class GameManager1 : MonoBehaviour
     {
         hydrants = GameObject.FindGameObjectsWithTag("Hydrant");
     }
-    /*private void Awake()
+    public void Update()
     {
-        cam2.SetActive(true);
-    }*/
+        if (Input.GetKey(KeyCode.P))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 
     public void Victory()
     {

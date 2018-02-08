@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class GuardControlelr : MonoBehaviour {
 
@@ -36,8 +37,6 @@ public class GuardControlelr : MonoBehaviour {
         {
             if (pupperZ != null)
             {
-
-
                 agent.SetDestination(pupperZ.transform.position);
                 agent.speed = 12;
                 bufferTime -= Time.deltaTime;
@@ -68,7 +67,9 @@ public class GuardControlelr : MonoBehaviour {
         if (collision.transform.tag == "PupperZ")
         {
             Destroy(collision.gameObject);
+            GameOver();
             agent.speed = 5;
+            
         }
     }
 
@@ -112,5 +113,10 @@ public class GuardControlelr : MonoBehaviour {
                 }
             }
         }
+    }
+    public void GameOver()
+    {
+        Debug.Log("Lose!!!11!!!!");
+        SceneManager.LoadScene("LoseScene");
     }
 }
