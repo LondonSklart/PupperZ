@@ -9,15 +9,16 @@ public class GameManager1 : MonoBehaviour
     int pissAmount;
 
     public GameObject[] hydrants;
+    
+    public AudioSource ThemeTune;
 
     private void Start()
     {
         hydrants = GameObject.FindGameObjectsWithTag("Hydrant");
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.PlayDelayed(0.5f);
+        audio.loop = true;
     }
-    /*private void Awake()
-    {
-        cam2.SetActive(true);
-    }*/
 
     public void Victory()
     {
