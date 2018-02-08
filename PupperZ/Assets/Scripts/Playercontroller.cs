@@ -57,7 +57,7 @@ public class Playercontroller : MonoBehaviour {
         {
             isPissing = false;
         }
-
+		/*
 		if (pissOMeter.CurrentVal < 0 ) 
 		{
 			canPiss = false;
@@ -65,7 +65,7 @@ public class Playercontroller : MonoBehaviour {
 		else if (pissOMeter.CurrentVal > 100) 
 		{
 			pissOMeter.CurrentVal = 100; 
-		}
+		}*/
 
 		float moveHorizontal = Input.GetAxisRaw("Horizontal");
 		float moveVertical = Input.GetAxisRaw("Vertical");
