@@ -66,11 +66,9 @@
      <Compile Include="Assets\Scripts\Playercontroller.cs" />
      <Compile Include="Assets\Scripts\SpeedBoost.cs" />
      <Compile Include="Assets\Scripts\Stat.cs" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+ <Reference Include="Assembly-CSharp-firstpass">
+ <HintPath>C:/Users/vikto/OneDrive/Documents/GitHub/PupperZ/PupperZ/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -104,10 +102,6 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/vikto/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F561AE7D-C331-2E63-F84A-184D25BD20D7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
