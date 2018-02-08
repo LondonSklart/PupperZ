@@ -32,7 +32,7 @@ public class Playercontroller : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (canPiss == true)
+		if (canPiss == true && pissOMeter.CurrentVal > 0)
 		{
             if (pissFerno)
             {
@@ -50,7 +50,11 @@ public class Playercontroller : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Space))
 		{
 			canPiss = true;
-            pissOMeter.CurrentVal -= 1;
+            if (pissFerno != true)
+            {
+                pissOMeter.CurrentVal -= 1;
+
+            }
 
         }
         if (Input.GetKeyUp(KeyCode.Space))
