@@ -58,14 +58,14 @@ public class Playercontroller : MonoBehaviour {
             isPissing = false;
         }
 
-		/*if (pissOMeter.CurrentVal == 0 ) 
+		if (pissOMeter.CurrentVal < 0 ) 
 		{
 			canPiss = false;
-		}
+		} 
 		else if (pissOMeter.CurrentVal > 100) 
 		{
 			pissOMeter.CurrentVal = 100; 
-		}*/
+		}
 
 		float moveHorizontal = Input.GetAxisRaw("Horizontal");
 		float moveVertical = Input.GetAxisRaw("Vertical");
